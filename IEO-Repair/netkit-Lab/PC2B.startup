@@ -1,0 +1,6 @@
+ifconfig eth0 up
+/etc/init.d/networking start
+
+ifconfig eth0 172.16.3.2 netmask 255.255.248.0 broadcast 172.16.3.254
+
+route add default gw 172.16.3.0
